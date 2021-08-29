@@ -1,6 +1,6 @@
-<aside class="sidebar sidebar-default sidebar-dark navs-rounded-all ">
+<aside class="sidebar sidebar-default sidebar-dark navs-rounded">
         <div class="sidebar-header d-flex align-items-center justify-content-start">
-            <a href="../dashboard/index" class="navbar-brand">
+            <a href="{{ url('dashboard/index')}}" class="navbar-brand">
                 <!--Logo start-->
                 <svg width="30" class="" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2" transform="rotate(-45 -0.757324 19.2427)" fill="currentColor"/>
@@ -30,7 +30,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../dashboard/index">
+                        <a class="nav-link active" aria-current="page" href="{{ url('dashboard/index')}}">
                             <i class="icon">
                                 <svg width="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path opacity="0.4" d="M16.0756 2H19.4616C20.8639 2 22.0001 3.14585 22.0001 4.55996V7.97452C22.0001 9.38864 20.8639 10.5345 19.4616 10.5345H16.0756C14.6734 10.5345 13.5371 9.38864 13.5371 7.97452V4.55996C13.5371 3.14585 14.6734 2 16.0756 2Z" fill="currentColor"></path>
@@ -60,7 +60,7 @@
                         </a>
                         <ul class="sub-nav collapse" id="horizontal-menu" data-bs-parent="#sidebar">
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/index-horizontal">
+                                <a class="nav-link " href="{{ url('dashboard/index-horizontal')}}">
                                   <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -73,7 +73,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/index-dual-horizontal">
+                                <a class="nav-link " href="{{ url('dashboard/index-dual-horizontal')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -86,7 +86,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/index-dual-compact">
+                                <a class="nav-link " href="{{ url('dashboard/index-dual-compact')}}">
                                     <i class="icon svg-icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -99,7 +99,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/index-boxed">
+                                <a class="nav-link " href="{{ url('dashboard/index-boxed')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -112,7 +112,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/index-boxed-fancy">
+                                <a class="nav-link " href="{{ url('dashboard/index-boxed-fancy')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -163,7 +163,7 @@
                         </a>
                         <ul class="sub-nav collapse" id="sidebar-special" data-bs-parent="#sidebar">
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/special-pages/billing">
+                                <a class="nav-link " href="{{ url('dashboard/special-pages/billing')}}">
                                   <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -176,7 +176,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/special-pages/calender">
+                                <a class="nav-link " href="{{ url('dashboard/special-pages/calender')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -189,7 +189,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/special-pages/kanban">
+                                <a class="nav-link " href="{{ url('dashboard/special-pages/kanban')}}">
                                    <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -202,7 +202,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/special-pages/pricing">
+                                <a class="nav-link " href="{{ url('dashboard/special-pages/pricing')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -215,7 +215,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/special-pages/rtl-support">
+                                <a class="nav-link " href="{{ url('dashboard/special-pages/rtl-support')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -228,7 +228,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/special-pages/timeline">
+                                <a class="nav-link " href="{{ url('dashboard/special-pages/timeline')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -259,7 +259,7 @@
                         </a>
                         <ul class="sub-nav collapse" id="sidebar-auth" data-bs-parent="#sidebar">
                             <li class="nav-item">
-                                <a class="nav-link" href="../dashboard/auth/sign-in">
+                                <a class="nav-link" href="{{ url('dashboard/auth/sign-in')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -272,7 +272,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../dashboard/auth/sign-up">
+                                <a class="nav-link" href="{{ url('dashboard/auth/sign-up')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -285,7 +285,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../dashboard/auth/confirm-mail">
+                                <a class="nav-link" href="{{ url('dashboard/auth/confirm-mail')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -298,7 +298,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../dashboard/auth/lock-screen">
+                                <a class="nav-link" href="{{ url('dashboard/auth/lock-screen')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -311,7 +311,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="../dashboard/auth/recoverpw">
+                                <a class="nav-link" href="{{ url('dashboard/auth/recoverpw')}}">
                                    <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -346,7 +346,7 @@
                         </a>
                         <ul class="sub-nav collapse" id="sidebar-user" data-bs-parent="#sidebar">
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/app/user-profile">
+                                <a class="nav-link " href="{{ url('dashboard/app/user-profile')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -359,7 +359,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/app/user-add">
+                                <a class="nav-link " href="{{ url('dashboard/app/user-add')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -372,7 +372,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/app/user-list">
+                                <a class="nav-link " href="{{ url('dashboard/app/user-list')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -403,7 +403,7 @@
                         </a>
                         <ul class="sub-nav collapse" id="utilities-error" data-bs-parent="#sidebar">
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/errors/error404">
+                                <a class="nav-link " href="{{ url('dashboard/errors/error404')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -415,7 +415,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/errors/error500">
+                                <a class="nav-link " href="{{ url('dashboard/errors/error500')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -427,7 +427,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/errors/maintenance">
+                                <a class="nav-link " href="{{ url('dashboard/errors/maintenance')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -474,7 +474,7 @@
                         </a>
                         <ul class="sub-nav collapse" id="sidebar-widget" data-bs-parent="#sidebar">
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/widget/widgetbasic">
+                                <a class="nav-link " href="{{ url('dashboard/widget/widgetbasic')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -487,7 +487,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/widget/widgetchart">
+                                <a class="nav-link " href="{{ url('dashboard/widget/widgetchart')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -500,7 +500,7 @@
                                 </a>
                             </li>
                              <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/widget/widgetcard">
+                                <a class="nav-link " href="{{ url('dashboard/widget/widgetcard')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -531,7 +531,7 @@
                         </a>
                         <ul class="sub-nav collapse" id="sidebar-maps" data-bs-parent="#sidebar">
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/maps/google">
+                                <a class="nav-link " href="{{ url('dashboard/maps/google')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -544,7 +544,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/maps/vector">
+                                <a class="nav-link " href="{{ url('dashboard/maps/vector')}}">
                                    <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -575,7 +575,7 @@
                         </a>
                         <ul class="sub-nav collapse" id="sidebar-form" data-bs-parent="#sidebar">
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/form/form-element">
+                                <a class="nav-link " href="{{ url('dashboard/form/form-element')}}">
                                    <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -588,7 +588,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/form/form-wizard">
+                                <a class="nav-link " href="{{ url('dashboard/form/form-wizard')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -601,7 +601,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/form/form-validation">
+                                <a class="nav-link " href="{{ url('dashboard/form/form-validation')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -632,7 +632,7 @@
                         </a>
                         <ul class="sub-nav collapse" id="sidebar-table" data-bs-parent="#sidebar">
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/table/bootstrap-table">
+                                <a class="nav-link " href="{{ url('dashboard/table/bootstrap-table')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -645,7 +645,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/table/table-data">
+                                <a class="nav-link " href="{{ url('dashboard/table/table-data')}}">
                                    <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -676,7 +676,7 @@
                         </a>
                         <ul class="sub-nav collapse" id="sidebar-icons" data-bs-parent="#sidebar">
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/icons/solid">
+                                <a class="nav-link " href="{{ url('dashboard/icons/solid')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -689,7 +689,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/icons/outline">
+                                <a class="nav-link " href="{{ url('dashboard/icons/outline')}}">
                                     <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -701,7 +701,7 @@
                                      <span class="item-name">Outlined</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="../dashboard/icons/dual-tone">
+                                <a class="nav-link " href="{{ url('dashboard/icons/dual-tone')}}">
                                    <i class="icon">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="10" viewBox="0 0 24 24" fill="currentColor">
                                             <g>
@@ -719,4 +719,4 @@
                 <!-- Sidebar Menu End -->        </div>
         </div>
         <div class="sidebar-footer"></div>
-    </aside>
+    </aside>  

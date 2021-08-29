@@ -38,7 +38,7 @@
                 <h4 class="text-white mb-5">Production ready FREE Open Source <b>Dashboard UI Kit</b> and <b>Design System</b>.</h4>
                 <div class="d-flex justify-content-center align-items-center">
                     <div>
-                        <a class="btn btn-light bg-white" target="_blank" href="./dashboard/">Dashboard Demo</a>
+                        <a class="btn btn-light bg-white" target="_blank" href="{{url('/dashboard/')}}">Dashboard Demo</a>
                     </div>
                     <div class="ms-3">
                         <a class="btn btn-light bg-white" href="#components">UI KIT</a>

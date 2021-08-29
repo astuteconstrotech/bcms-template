@@ -1,9 +1,8 @@
-   <!-- Footer Section Start -->
-      <footer class="footer">
+ <footer class="footer">
           <div class="footer-body">
               <ul class="left-panel list-inline mb-0 p-0">
-                  <li class="list-inline-item"><a href="../dashboard/extra/privacy-policy">Privacy Policy</a></li>
-                  <li class="list-inline-item"><a href="../dashboard/extra/terms-of-service">Terms of Use</a></li>
+                  <li class="list-inline-item"><a href="{{ url('dashboard/extra/privacy-policy')}}">Privacy Policy</a></li>
+                  <li class="list-inline-item"><a href="{{ url('dashboard/extra/terms-of-service')}}">Terms of Use</a></li>
               </ul>
               <div class="right-panel">
                   ©<script>document.write(new Date().getFullYear())</script> Hope UI, Made with
@@ -15,28 +14,3 @@
               </div>
           </div>
       </footer>
-      <!-- Footer Section End -->    
-  </main>
-    <!-- Backend Bundle JavaScript -->
-    <script src="{{asset('assets/js/libs.min.js')}}"></script>
-    
-    <!-- widgetchart JavaScript -->
-    <script src="{{asset('assets/js/charts/widgetcharts.js')}}"></script>
-    
-    <!-- mapchart JavaScript -->
-    <script src="{{asset('assets/js/charts/vectore-chart.js')}}"></script>
-    <script src="{{asset('assets/js/charts/dashboard.js')}}"></script>
-    
-    <!-- fslightbox JavaScript -->
-    <script src="{{asset('assets/js/fslightbox.js')}}"></script>
-    
-    <!-- settings JavaScript -->
-    <script src="{{asset('assets/js/setting.js')}}"></script>
-    
-    <!-- Form Wizard Script -->
-    <script src="{{asset('assets/js/form-wizard.js')}}"></script>
-    
-    <!-- app JavaScript -->
-    <script src="{{asset('assets/js/app.js')}}"></script>
-  </body>
-</html>
