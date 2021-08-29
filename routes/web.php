@@ -14,22 +14,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('index');
+});
+Route::get('/dashboard', function () {
     return view('dashboard.index');
 });
-Route::get('home', function () {
-    return view('dashboard.index');
-});
-Route::get('/auth/sign-in', function () {
-    return view('auth.sign-in');
+Route::get('login', function () {
+    return view('auth.login');
 });
 Route::get('/auth/lock-screen', function () {
     return view('auth.lock-screen');
 });
-Route::get('/auth/sign-in', function () {
-    return view('auth.sign-in');
-});
-Route::get('/auth/sign-up', function () {
-    return view('auth.sign-up');
+
+Route::get('register', function () {
+    return view('auth.register');
 });
 Route::get('/user/profile', function () {
     return view('user.user-profile');
