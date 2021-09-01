@@ -35,7 +35,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto  navbar-list mb-2 mb-lg-0">
-                 <li class="nav-item dropdown">
+<!--                  <li class="nav-item dropdown">
                     <a href="#" class="search-toggle nav-link" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img src="{{ asset('assets/images/Flag/flag001.png')}}" class="img-fluid rounded-circle')}}" alt="user" style="height: 30px; min-width: 30px; width: 30px;">
                     <span class="bg-primary"></span>
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                     </div>
-                </li>
+                </li> -->
                 <li class="nav-item dropdown">
                   <a href="#"  class="nav-link" id="notification-drop" data-bs-toggle="dropdown" >
                       <svg width="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -204,14 +204,14 @@
                     <img src="{{ asset('assets/images/avatars/01.png')}}" alt="User-Profile" class="img-fluid avatar avatar-50 avatar-rounded">
                     <div class="caption ms-3 d-none d-md-block ">
                         <h6 class="mb-0 caption-title">Austin Robertson</h6>
-                        <p class="mb-0 caption-sub-title">Marketing Administrator</p>
+                        <p class="mb-0 caption-sub-title"><small>Marketing Administrator</small></p>
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="{{ url('dashboard/app/user-profile')}}">Profile</a></li>
-                    <li><a class="dropdown-item" href="{{ url('dashboard/app/user-privacy-setting')}}">Privacy Setting</a></li>
+                    <li><a class="dropdown-item" href="{{ url('dashboard/app/user-profile')}}"><i class="fa fa-user-o fa-fw fa-md" aria-hidden="true"></i> Profile</a></li>
+                    <li><a class="dropdown-item" href="{{ url('dashboard/app/user-privacy-setting')}}"><i class="fa fa-lock fa-fw fa-md" aria-hidden="true"></i>Reset Password</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="{{ url('dashboard/auth/sign-in')}}">Logout</a></li>
+                    <li><a class="dropdown-item" href="{{ url('dashboard/auth/sign-in')}}"><i class="fa fa-sign-out fa-fw fa-md" aria-hidden="true"></i> Logout</a></li>
                   </ul>
                 </li>
               </ul>

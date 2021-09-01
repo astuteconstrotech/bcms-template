@@ -4,15 +4,14 @@
     <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <title>BCMS Cloud | Responsive Bootstrap 5 Admin Dashboard Template</title>
-      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <!-- Favicon -->
-      <link rel="shortcut icon" href="{{asset('/assets/images/favicon.ico')}}" />
+      <link rel="shortcut icon" href="{{asset('assets/images/favicon.ico')}}" />
       
       <!-- Library / Plugin Css Build -->
-      <link rel="stylesheet" href="{{asset('/assets/css/libs.min.css')}}">
-      
+      <link rel="stylesheet" href="{{asset('assets/css/libs.min.css')}}">      
       <!-- Custom Css -->
-      <link rel="stylesheet" href="{{asset('/assets/css/hope-ui.css?v=1.0.2')}}">  
+      <link rel="stylesheet" href="{{asset('assets/css/hope-ui.css?v=1.0.2')}}">  
     </head>
   <body class="  ">
     <!-- loader Start -->

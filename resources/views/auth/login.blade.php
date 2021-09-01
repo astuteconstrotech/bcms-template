@@ -24,7 +24,8 @@
     
       <div class="wrapper">
       <section class="login-content">
-         <div class="row m-0 align-items-center bg-white vh-100">            
+         <!-- align-items-center -->
+         <div class="row m-0 bg-white vh-100">            
             <div class="col-md-6">
                <div class="row justify-content-center">
                   <div class="col-md-10">
@@ -39,9 +40,9 @@
                                   <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2" transform="rotate(45 10.5562 -0.556152)" fill="currentColor"/>
                               </svg>
                               <!--logo End-->     
-                              <h4 class="logo-title ms-3">Astute Constro Tech</h4>
+                              <h4 class="logo-title ms-3 mt-5">Astute Constro Tech</h4>
                            </a>
-                           <h2 class="mb-2 text-center">Log In</h2>
+                           <h2 class="mb-2 text-center mt-5">Log In</h2>
                            <p class="text-center">Login to stay connected.</p>
                            <form>
                               <div class="row">
