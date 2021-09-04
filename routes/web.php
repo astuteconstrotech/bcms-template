@@ -16,9 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
-Route::get('/dashboard', function () {
-    return view('dashboard.index');
-});
+
 Route::get('login', function () {
     return view('auth.login');
 });
@@ -40,5 +38,6 @@ Route::get('/user/', function () {
 });
 
 Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+});
