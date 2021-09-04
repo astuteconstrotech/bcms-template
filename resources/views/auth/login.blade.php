@@ -17,11 +17,12 @@
   <body class=" " data-bs-spy="scroll" data-bs-target="#elements-section" data-bs-offset="0" tabindex="0">
     <!-- loader Start -->
     <div id="loading">
-      <div class="loader simple-loader">
-          <div class="loader-body"></div>
-      </div>    </div>
+        <div class="loader simple-loader">
+            <div class="loader-body"></div>
+        </div>
+    </div>
     <!-- loader END -->    
-      <div class="wrapper">
+    <div class="wrapper">
       <section class="login-content">
          <!-- align-items-center -->
          <div class="row m-0 bg-white vh-100">            
@@ -39,9 +40,9 @@
                                   <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2" transform="rotate(45 10.5562 -0.556152)" fill="currentColor"/>
                               </svg>
                               <!--logo End-->     
-                              <h4 class="logo-title ms-3 mt-5">{{ config('app.name', 'Laravel') }}</h4>
+                              <h4 class="logo-title ms-3 mt-4">{{ config('app.name', 'Laravel') }}</h4>
                            </a>
-                           <h2 class="mb-2 text-center">Log in</h2>
+                           <h2 class="mb-1 text-center">Log in</h2>
                            <p class="text-center">Login to stay connected.</p>
                             @if (session('status'))
                                 <div class="alert alert-success border-white" role="alert">
@@ -50,7 +51,6 @@
                             @endif
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
-
                                 <div class="form-group row">
                                     <div class="col-md-10  offset-md-1">
                                         <label for="email" class="col-md-12 col-form-label text-md-right">{{ __('Email Address') }}</label>
@@ -136,8 +136,7 @@
                                 <div class="form-group row">
                                     <div class="col-md-10  offset-md-1">
                                         <label for="email" class="col-md-12 col-form-label text-md-right">{{ __('Email Address') }}</label>
-                                        <input id="email" type="email" class="form-control border-secondary  @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
+                                        <input id="email" type="email" class="form-control border-secondary  @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus> 
                                         @error('email')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -165,10 +164,10 @@
                                 </p>
                             </form>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="sign-bg">
+                    </div>
+                </div>
+            </div>
+            <div class="sign-bg">
                   <svg width="280" height="230" viewBox="0 0 431 398" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <g opacity="0.05">
                      <rect x="-157.085" y="193.773" width="543" height="77.5714" rx="38.7857" transform="rotate(-45 -157.085 193.773)" fill="#3B8AFF"/>
@@ -184,27 +183,20 @@
             </div>
          </div>
       </section>
-      </div>
-    
+    </div>    
     <!-- Backend Bundle JavaScript -->
-    <script src="{{ asset('assets/js/libs.min.js')}}"></script>
-    
+    <script src="{{ asset('assets/js/libs.min.js')}}"></script>    
     <!-- widgetchart JavaScript -->
-    <script src="{{ asset('assets/js/charts/widgetcharts.js')}}"></script>
-    
+    <script src="{{ asset('assets/js/charts/widgetcharts.js')}}"></script>    
     <!-- mapchart JavaScript -->
     <script src="{{ asset('assets/js/charts/vectore-chart.js')}}"></script>
-    <script src="{{ asset('assets/js/charts/dashboard.js')}}"></script>
-    
+    <script src="{{ asset('assets/js/charts/dashboard.js')}}"></script>    
     <!-- fslightbox JavaScript -->
-    <script src="{{ asset('assets/js/fslightbox.js')}}"></script>
-    
+    <script src="{{ asset('assets/js/fslightbox.js')}}"></script>    
     <!-- settings JavaScript -->
-    <script src="{{ asset('assets/js/setting.js')}}"></script>
-    
+    <script src="{{ asset('assets/js/setting.js')}}"></script>    
     <!-- Form Wizard Script -->
-    <script src="{{ asset('assets/js/form-wizard.js')}}"></script>
-    
+    <script src="{{ asset('assets/js/form-wizard.js')}}"></script>    
     <!-- app JavaScript -->
     <script src="{{ asset('assets/js/app.js')}}"></script>
   </body>
@@ -218,8 +210,6 @@
 
     function registLoginForm() {
         $(".request-password").hide();
-        $(".login-form").show();
-      
+        $(".login-form").show();      
     }
-
 </script>

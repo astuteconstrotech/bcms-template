@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
@@ -20,9 +19,9 @@
     <div id="loading">
       <div class="loader simple-loader">
           <div class="loader-body"></div>
-      </div>    </div>
-    <!-- loader END -->
-    
+      </div>    
+  </div>
+    <!-- loader END -->    
       <div class="wrapper">
       <section class="login-content">
          <!-- align-items-center -->

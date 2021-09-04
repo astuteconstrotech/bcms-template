@@ -27,7 +27,10 @@
                         <a class="nav-link" aria-current="page" href="{{url('/about-us')}}" >Contact</a>
                     </li>
                     <li class="nav-item me-3">
-                        <a class="nav-link" aria-current="page" href="{{url('/register')}}" target="_blank">Register</a>
+                        <a class="nav-link" aria-current="page" href="{{url('/register')}}" target="">Register</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" aria-current="page" href="{{url('/login')}}" target="">Login</a>
                     </li>
                 </ul>
             </div>

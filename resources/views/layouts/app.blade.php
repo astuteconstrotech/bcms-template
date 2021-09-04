@@ -28,7 +28,6 @@
             @yield('content')     
             @include('layouts.footer')
       </main>
-
     
  <!-- Backend Bundle JavaScript -->
     <script src="{{asset('assets/js/libs.min.js')}}"></script>    

@@ -11788,8 +11788,15 @@ body.offcanvas-active {
   color: #343a40; }
 
 .footer {
-  font-size: 14px;
-  background: #fff; }
+      font-size: 14px;
+      background: #fff; 
+      position: fixed;
+      bottom: 0;
+      width: 80%;
+      z-index: 1111;
+      color: white;
+  }
+
   .footer .footer-body {
     display: -webkit-flex;
     display: -ms-flexbox;
