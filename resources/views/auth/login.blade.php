@@ -20,8 +20,7 @@
       <div class="loader simple-loader">
           <div class="loader-body"></div>
       </div>    </div>
-    <!-- loader END -->
-    
+    <!-- loader END -->    
       <div class="wrapper">
       <section class="login-content">
          <!-- align-items-center -->
@@ -42,8 +41,13 @@
                               <!--logo End-->     
                               <h4 class="logo-title ms-3 mt-5">{{ config('app.name', 'Laravel') }}</h4>
                            </a>
-                           <h2 class="mb-2 text-center mt-5">Log in</h2>
+                           <h2 class="mb-2 text-center">Log in</h2>
                            <p class="text-center">Login to stay connected.</p>
+                            @if (session('status'))
+                                <div class="alert alert-success border-white" role="alert">
+                                    {{ session('status') }}
+                                </div>
+                            @endif
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
 
@@ -109,7 +113,7 @@
                      </div>
                   </div>
                   <!-- request registered acccount password panel start -->
-                  <div class="col-md-10 request-password hide-panel">
+                  <div class="col-md-10 request-password hide-panel" style="display:none">
                      <div class="card card-transparent shadow-none d-flex justify-content-center mb-0 auth-card">
                         <div class="card-body">
                            <a href="{{ url('/')}}" class="navbar-brand d-flex align-items-center mb-3">
@@ -123,7 +127,7 @@
                               <!--logo End-->     
                               <h4 class="logo-title ms-3 mt-5">{{ config('app.name', 'Laravel') }}</h4>
                            </a>
-                           <h2 class="mb-2 text-center mt-5">Reset Password</h2>
+                           <h2 class="mb-2 text-center">Reset Password</h2>
                            <p class="text-center">Login to stay connected.</p>
 
                            <form method="POST" action="{{ route('password.email') }}">
@@ -206,6 +210,7 @@
   </body>
 </html>
 <script type="text/javascript">
+    $(".request-password").hide();
     function requestPassword() {
         $(".login-form").hide();
         $(".request-password").show();
