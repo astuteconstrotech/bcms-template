@@ -1,3 +1,4 @@
+<div class="position-relative">
      <nav  class="nav fixed-top navbar shadow p-1 navbar-expand-lg navbar-light iq-navbar navs-sticky" >
           <div class="container-fluid navbar-inner">
             <a href="{{ url('dashboard/index')}}" class="navbar-brand">
@@ -203,18 +204,32 @@
                   <a class="nav-link py-0 d-flex align-items-center" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="{{ asset('assets/images/avatars/01.png')}}" alt="User-Profile" class="img-fluid avatar avatar-50 avatar-rounded">
                     <div class="caption ms-3 d-none d-md-block ">
-                        <h6 class="mb-0 caption-title">Austin Robertson</h6>
+                        <h6 class="mb-0 caption-title">{{ Auth::user()->name??'' }}</h6>
                         <p class="mb-0 caption-sub-title"><small>Marketing Administrator</small></p>
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="{{ url('dashboard/app/user-profile')}}"><i class="fa fa-user-o fa-fw fa-md" aria-hidden="true"></i> Profile</a></li>
-                    <li><a class="dropdown-item" href="{{ url('dashboard/app/user-privacy-setting')}}"><i class="fa fa-lock fa-fw fa-md" aria-hidden="true"></i>Reset Password</a></li>
+                    <li>
+                        <a class="dropdown-item" href="{{ url('dashboard/app/user-profile')}}"><i class="fa fa-user-o fa-md" aria-hidden="true"></i> Profile</a></li>
+                    <li>
+                        <a class="dropdown-item" href="{{ url('dashboard/app/user-privacy-setting')}}">
+                            <i class="fa fa-lock fa-md" aria-hidden="true"></i> Reset Password
+                        </a>
+                    </li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="{{ url('dashboard/auth/sign-in')}}"><i class="fa fa-sign-out fa-fw fa-md" aria-hidden="true"></i> Logout</a></li>
+                    <li>
+                        <a class="dropdown-item" href="{{ route('logout') }}"    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                          <i class="fa fa-sign-out fa-fw fa-md" aria-hidden="true" ></i> 
+                            Logout
+                        </a>
+                    </li>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
                   </ul>
                 </li>
               </ul>
             </div>
-          </div>
-        </nav>  
+        </div>
+    </nav>
+</div>

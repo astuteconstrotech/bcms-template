@@ -38,3 +38,7 @@ Route::get('/user/create', function () {
 Route::get('/user/', function () {
     return view('user.user-list');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
