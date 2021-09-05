@@ -24,18 +24,10 @@
             <div class="collapse navbar-collapse" id="sidebar">
                 <!-- Sidebar Menu Start -->
                 <ul class="navbar-nav iq-main-menu">
-                    <li class="nav-item static-item">
-                        <a class="nav-link static-item disabled" href="#" tabindex="-1">
-                            <span class="default-icon">
-                                <i class="fa fa-home fa-fw fa-md" aria-hidden="true"></i>  Home
-                            </span>
-                            <span class="mini-icon">-</span>
-                        </a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ url('dashboard')}}">
                             <span class="item-name"> 
-                                <i class="fa fa-bar-chart fa-fw fa-md" aria-hidden="true"></i> Dashboard</span>
+                                <i class="fa fa-home fa-fw fa-md" aria-hidden="true"></i> Dashboard</span>
                         </a>
                     </li>
                     <li class="nav-item">

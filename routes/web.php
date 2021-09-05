@@ -39,8 +39,8 @@ Route::get('/user/', function () {
 
 Auth::routes();
 Route::group(['middleware' => 'auth'], function () {
+    Route::resource('dashboard', App\Http\Controllers\DashboardController::class);
     ## admin routes
-    Route::resource('admin/dashboard', App\Http\Controllers\DashboardController::class);
     Route::resource('admin/clients', App\Http\Controllers\Admin\ClientController::class);
     Route::resource('admin/subscription', App\Http\Controllers\Admin\SubscriptionController::class);
     Route::resource('admin/packages', App\Http\Controllers\Admin\PackageController::class);

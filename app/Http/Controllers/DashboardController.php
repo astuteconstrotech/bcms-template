@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Brian2694\Toastr\Facades\Toastr;
 use Illuminate\Http\Request;
 use Model\User;
 use notify;
@@ -16,6 +16,7 @@ class DashboardController extends Controller
      */
     public function index()
     {
+        Toastr::success('Post added successfully :)','Success');
         return view('admin.dashboard.index');
     }
 
