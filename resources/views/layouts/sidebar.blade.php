@@ -55,7 +55,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="{{ url('admin\clients')}}">
+                                <a class="nav-link " href="{{ url('admin\subscription')}}">
                                     <span class="item-name"> <i class="fa fa-cog fa-fw fa-md" aria-hidden="true"></i> Subscription</span>
                                 </a>
                             </li>
@@ -65,7 +65,7 @@
                                 </a>
                             </li>
                              <li class="nav-item">
-                                <a class="nav-link " href="{{ url('admin\package')}}">
+                                <a class="nav-link " href="{{ url('admin\packages')}}">
                                     <span class="item-name"> <i class="fa fa-cog fa-fw fa-md" aria-hidden="true"></i> Packages</span>
                                 </a>
                             </li>

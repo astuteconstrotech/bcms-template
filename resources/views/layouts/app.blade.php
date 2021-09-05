@@ -12,7 +12,8 @@
         <!-- Library / Plugin Css Build -->
         <link rel="stylesheet" href="{{asset('assets/css/libs.min.css')}}">      
         <!-- Custom Css -->
-        <link rel="stylesheet" href="{{asset('assets/css/hope-ui.css?v=1.0.2')}}">  
+        <link rel="stylesheet" href="{{asset('assets/css/hope-ui.css?v=1.0.2')}}"> 
+        @notifyCss 
     </head>
   <body class="  ">
     <!-- loader Start -->
@@ -25,11 +26,14 @@
         @include('layouts.sidebar')
         <main class="main-content">
             @include('layouts.header')         
+            <x:notify-messages />
             @yield('content')     
             @include('layouts.footer')
       </main>
     
- <!-- Backend Bundle JavaScript -->
+    <!-- Backend Bundle JavaScript -->
+    ##notification
+    @notifyJs
     <script src="{{asset('assets/js/libs.min.js')}}"></script>    
     <!-- widgetchart JavaScript -->
     <script src="{{asset('assets/js/charts/widgetcharts.js')}}"></script>    

@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Model\User;
+use notify;
+use drakify;
 
 class DashboardController extends Controller
 {
@@ -14,6 +16,9 @@ class DashboardController extends Controller
      */
     public function index()
     {
+
+        connectify('error', 'Success!', 'Success Message Here');
+        connectify('success', 'Success!', 'Success Message Here');
         return view('admin.dashboard.index');
     }
 

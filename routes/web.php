@@ -42,5 +42,7 @@ Route::group(['middleware' => 'auth'], function () {
     ## admin routes
     Route::resource('admin/dashboard', App\Http\Controllers\DashboardController::class);
     Route::resource('admin/clients', App\Http\Controllers\Admin\ClientController::class);
+    Route::resource('admin/subscription', App\Http\Controllers\Admin\SubscriptionController::class);
+    Route::resource('admin/packages', App\Http\Controllers\Admin\PackageController::class);
     Route::resource('admin/transactions',App\Http\Controllers\Admin\TransactionController::class);
 });

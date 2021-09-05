@@ -17,7 +17,7 @@
                   <h4 class="card-title">Clients</h4>
                </div>
                <div class="card-action">
-                    <a href="#" class="btn btn-primary btn-sm" role="button">Add Clients</a>
+                    <a href="#" class="btn btn-primary btn-sm" role="button">Add Client</a>
                 </div>
             </div>
             <div class="card-body">

@@ -4,7 +4,7 @@
     <nav aria-label="col-md-12 breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Home </a></a></li>
-             <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+             <li class="breadcrumb-item active" aria-current="page">Transactions</li>
         </ol>
     </nav>            
 </div> 
@@ -14,8 +14,11 @@
          <div class="card">
             <div class="card-header d-flex justify-content-between">
                <div class="header-title">
-                  <h4 class="card-title">Bootstrap Datatables</h4>
+                  <h4 class="card-title">Transactions</h4>
                </div>
+               <div class="card-action">
+                    <!-- <a href="#" class="btn btn-primary btn-sm" role="button">Add Client</a> -->
+                </div>
             </div>
             <div class="card-body">
                <div class="table-responsive">

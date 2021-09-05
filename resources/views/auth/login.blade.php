@@ -91,7 +91,7 @@
 
                                 <div class="form-group row mb-0">
                                     <div class="col-md-10 offset-md-1">
-                                        <button type="submit" class="btn btn-primary">
+                                        <button type="submit" class="btn btn-sm btn-primary">
                                             {{ __('Login') }}
                                         </button>
                                     </div>
@@ -146,7 +146,7 @@
                                 </div>
                                 <div class="form-group row mb-0">
                                     <div class="col-md-10 offset-md-1">
-                                        <button type="submit" class="btn btn-primary">
+                                        <button type="submit" class="btn btn-sm btn-primary">
                                             {{ __('Submit') }}
                                         </button>
                                     </div>
