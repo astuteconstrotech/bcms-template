@@ -39,5 +39,8 @@ Route::get('/user/', function () {
 
 Auth::routes();
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+    ## admin routes
+    Route::resource('admin/dashboard', App\Http\Controllers\DashboardController::class);
+    Route::resource('admin/clients', App\Http\Controllers\Admin\ClientController::class);
+    Route::resource('admin/transactions',App\Http\Controllers\Admin\TransactionController::class);
 });

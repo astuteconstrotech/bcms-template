@@ -10885,7 +10885,25 @@ textarea.form-control-lg {
     vertical-align: middle; }
   .table.table-dark tbody tr td {
     color: #F5F6FA;
-    vertical-align: middle; }
+    vertical-align: middle; 
+  }
+  .listing-table tbody tr td{
+    color: #151515;
+    padding: 5px;
+    border: 0.5px solid lightgray;
+    font-family: 'Inter';
+    font-size: 15px;
+    vertical-align: middle;
+  }
+
+  .listing-table thead tr th {
+    color: #151515;
+    padding: 10px;
+    border: 0.5px solid lightgray;
+    font-family: 'Inter';
+    font-size: 15px;
+    vertical-align: middle;
+  }
 
 .table > :not(:last-child) > :last-child > * {
   border-bottom-color: transparent; }

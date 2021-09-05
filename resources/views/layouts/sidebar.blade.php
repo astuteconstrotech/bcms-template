@@ -50,18 +50,23 @@
                         </a>
                         <ul class="sub-nav collapse" id="super-admin" data-bs-parent="#sidebar">
                             <li class="nav-item">
-                                <a class="nav-link " href="{{ url('clients')}}">
+                                <a class="nav-link " href="{{ url('admin\clients')}}">
                                   <span class="item-name"> <i class="fa fa-cog fa-fw fa-md" aria-hidden="true"></i> Clients</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="{{ url('dashboard/index-dual-horizontal')}}">
+                                <a class="nav-link " href="{{ url('admin\clients')}}">
                                     <span class="item-name"> <i class="fa fa-cog fa-fw fa-md" aria-hidden="true"></i> Subscription</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="{{ url('Transactions')}}">
-                                    <span class="item-name"> <i class="fa fa-cog fa-fw fa-md" aria-hidden="true"></i> Dual Compact</span>
+                                <a class="nav-link " href="{{ url('admin\transactions')}}">
+                                    <span class="item-name"> <i class="fa fa-cog fa-fw fa-md" aria-hidden="true"></i> Transactions</span>
+                                </a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link " href="{{ url('admin\package')}}">
+                                    <span class="item-name"> <i class="fa fa-cog fa-fw fa-md" aria-hidden="true"></i> Packages</span>
                                 </a>
                             </li>
                         </ul>
