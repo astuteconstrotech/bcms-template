@@ -26,7 +26,7 @@
         @include('layouts.sidebar')
         <main class="main-content">
             @include('layouts.header')         
-            <x:notify-messages />
+            <!-- <x:notify-messages /> -->
             @yield('content')     
             @include('layouts.footer')
       </main>

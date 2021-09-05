@@ -16,9 +16,6 @@ class DashboardController extends Controller
      */
     public function index()
     {
-
-        connectify('error', 'Success!', 'Success Message Here');
-        connectify('success', 'Success!', 'Success Message Here');
         return view('admin.dashboard.index');
     }
 
