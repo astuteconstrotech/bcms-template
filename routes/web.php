@@ -45,4 +45,5 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('admin/subscription', App\Http\Controllers\Admin\SubscriptionController::class);
     Route::resource('admin/packages', App\Http\Controllers\Admin\PackageController::class);
     Route::resource('admin/transactions',App\Http\Controllers\Admin\TransactionController::class);
+    Route::resource('projects',App\Http\Controllers\Client\ProjectController::class);
 });

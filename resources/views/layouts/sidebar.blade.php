@@ -102,8 +102,8 @@
                         </a>
                         <ul class="sub-nav collapse" id="project-manegement" data-bs-parent="#sidebar">
                             <li class="nav-item">
-                                <a class="nav-link " href="{{ url('project/index-horizontal')}}">
-                                  <span class="item-name"> <i class="fa fa-cog fa-fw fa-md" aria-hidden="true"></i> Horizontal </span>
+                                <a class="nav-link " href="{{ url('projects/')}}">
+                                  <span class="item-name"> <i class="fa fa-cog fa-fw fa-md" aria-hidden="true"></i>Projects</span>
                                 </a>
                             </li>
                             <li class="nav-item">
