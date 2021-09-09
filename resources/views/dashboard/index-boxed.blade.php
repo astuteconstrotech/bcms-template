@@ -442,8 +442,8 @@
                      <div id="myChart" class="col-md-8 col-lg-8 myChart"></div>
                      <div class="d-grid gap col-md-4 col-lg-4">
                         <div class="d-flex align-items-start">
-                           <svg class="mt-2" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 24 24" fill="#3a57e8">
-                              <circle cx="12" cy="12" r="8" fill="#3a57e8"></circle>
+                           <svg class="mt-2" xmlns="http://www.w3.org/2000/svg" width="14" viewBox="0 0 24 24" fill="#f16a1b">
+                              <circle cx="12" cy="12" r="8" fill="#f16a1b"></circle>
                            </svg>
                            <div class="ms-3">
                               <span class="text-secondary">Fashion</span>
@@ -493,7 +493,7 @@
                      <h4 class="card-title mb-2">Enterprise Clients</h4>
                      <p class="mb-0">
                         <svg class ="me-2" width="24" height="24" viewBox="0 0 24 24">
-                           <path fill="#3a57e8" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+                           <path fill="#f16a1b" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
                         </svg>
                         15 new acquired this month
                      </p>            

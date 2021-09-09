@@ -7,7 +7,7 @@ if (jQuery('#myChart').length) {
     height: 230,
     type: 'radialBar',
   },
-  colors: ["#4bc7d2", "#3a57e8"],
+  colors: ["#4bc7d2", "#f16a1b"],
   plotOptions: {
     radialBar: {
       hollow: {
@@ -47,7 +47,7 @@ if (jQuery('#d-activity').length) {
             show:false
           }
       },
-      colors: ["#3a57e8", "#4bc7d2"],
+      colors: ["#f16a1b", "#4bc7d2"],
       plotOptions: {
         bar: {
           horizontal: false,
@@ -124,7 +124,7 @@ if (jQuery('#d-main').length) {
               enabled: false,
           }
       },
-      colors: ["#3a57e8", "#4bc7d2"],
+      colors: ["#f16a1b", "#4bc7d2"],
       dataLabels: {
           enabled: false
       },
@@ -175,7 +175,7 @@ if (jQuery('#d-main').length) {
               opacityFrom: .4,
               opacityTo: .1,
               stops: [0, 50, 80],
-              colors: ["#3a57e8", "#4bc7d2"]
+              colors: ["#f16a1b", "#4bc7d2"]
           }
       },
       tooltip: {

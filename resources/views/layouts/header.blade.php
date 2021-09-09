@@ -210,7 +210,7 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li>
-                        <a class="dropdown-item" href="{{ url('dashboard/app/user-profile')}}"><i class="fa fa-user-o fa-md" aria-hidden="true"></i> Profile</a></li>
+                        <a class="dropdown-item" href="{{ url('dashboard/app/user-profile')}}"><i class="fa fa-user fa-md" aria-hidden="true"></i> Profile</a></li>
                     <li>
                         <a class="dropdown-item" href="{{ url('dashboard/app/user-privacy-setting')}}">
                             <i class="fa fa-lock fa-md" aria-hidden="true"></i> Reset Password
