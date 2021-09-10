@@ -14,7 +14,7 @@ class LeadsController extends Controller
      */
     public function index()
     {
-        //
+        return view('client.leads.index');
     }
 
     /**

@@ -46,4 +46,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('admin/packages', App\Http\Controllers\Admin\PackageController::class);
     Route::resource('admin/transactions',App\Http\Controllers\Admin\TransactionController::class);
     Route::resource('projects',App\Http\Controllers\Client\ProjectController::class);
+    Route::resource('leads',App\Http\Controllers\Client\LeadsController::class);
+    Route::resource('work-balance',App\Http\Controllers\Client\WorkBalanceController::class);
 });
