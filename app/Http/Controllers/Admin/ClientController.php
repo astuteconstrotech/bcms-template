@@ -62,8 +62,8 @@ class ClientController extends Controller
      */
     public function edit($id)
     {
-        $clientArr = User::with(['fn_user_meta'=>function($q){
-            $q->with('fn_files')->where('status',[0,1]);
+        $clientArr = User::with(['fn_user_meta' => function($q){
+            $q->with('fn_files');
         }])->find($id);
         return view('admin.clients.edit',compact('clientArr'));
     }

@@ -25,7 +25,7 @@ class CreateUserMetaTable extends Migration
             $table->string('company_services',100)->default(NULL)->nullable();
             $table->string('gst_no',400)->default(NULL)->nullable();
             $table->string('work_grade',100)->default(NULL)->nullable();
-            $table->string('Location',50)->default(NULL)->nullable();
+            $table->string('location',50)->default(NULL)->nullable();
             $table->string('working_area',100)->default(NULL)->nullable();
             $table->enum('user_type',[1,2,3,4])->default(null)->nullable()->comment('user role 1- Builder, 2 - contractor, 3 - Developer, 4 - consultant, 5- Other');
             $table->text('desc',300)->default(NULL)->nullable();

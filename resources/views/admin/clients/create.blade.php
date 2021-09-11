@@ -11,21 +11,7 @@
    <div class="conatiner-fluid content-inner mt-n5 py-0">
       {!! Form::open(['url' => 'admin/clients', 'class' => '', 'files' => true]) !!}
         <div class="row">
-            <div class="col-xl-3 col-lg-4">
-               <div class="card">
-                  <div class="card-header d-flex justify-content-between">
-                     <div class="header-title">
-                        <h4 class="card-title">User Profile</h4>
-                     </div>
-                  </div>
-                  <div class="card-body">
-                     <form>
-                        @include('admin.clients.profile-form')
-                     </form>
-                  </div>
-               </div>
-            </div>
-            <div class="col-xl-9 col-lg-8">
+            <div class="col-xl-12 col-lg-12">
                <div class="card">
                   <div class="card-header d-flex justify-content-between">
                      <div class="header-title">
