@@ -25,98 +25,30 @@
                   <table id="datatable" class="table table-hover table-striped" data-toggle="data-table">
                      <thead>
                         <tr>
+                           <th>No</th>
                            <th>Name</th>
-                           <th>Position</th>
                            <th>Office</th>
                            <th>Reg. Date</th>
+                           <th>Vrification</th>
                            <th>Status</th>
                            <th>Action</th>
                         </tr>
                      </thead>
                      <tbody>
-                        <tr>
-                           <td>Tiger Nixon</td>
-                           <td>System Architect</td>
-                           <td>Edinburgh</td>
-                           <td>61</td>
-                           <td>2011/04/25</td>
-                           <td>
-                              <a href=""><i class="fa fa-edit  text-primary  fa-fw fa-md" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-eye text-primary fa-fw fa-md" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-trash text-danger fa-fw fa-md" aria-hidden="true"></i></a>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>Garrett Winters</td>
-                           <td>Accountant</td>
-                           <td>Tokyo</td>
-                           <td>63</td>
-                           <td>2011/07/25</td>
-                           <td>
-                              <a href=""><i class="fa fa-edit  text-primary  fa-fw fa-md" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-eye text-primary fa-fw fa-md" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-trash text-danger fa-fw fa-md" aria-hidden="true"></i></a>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>Garrett Winters</td>
-                           <td>Accountant</td>
-                           <td>Tokyo</td>
-                           <td>63</td>
-                           <td>2011/07/25</td>
-                           <td>
-                              <a href=""><i class="fa fa-edit  text-primary  fa-fw fa-md" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-eye text-primary fa-fw fa-md" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-trash text-danger fa-fw fa-md" aria-hidden="true"></i></a>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>Garrett Winters</td>
-                           <td>Accountant</td>
-                           <td>Tokyo</td>
-                           <td>63</td>
-                           <td>2011/07/25</td>
-                           <td>
-                              <a href=""><i class="fa fa-edit  text-primary  fa-fw fa-md" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-eye text-primary fa-fw fa-md" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-trash text-danger fa-fw fa-md" aria-hidden="true"></i></a>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>Garrett Winters</td>
-                           <td>Accountant</td>
-                           <td>Tokyo</td>
-                           <td>63</td>
-                           <td>2011/07/25</td>
-                           <td>
-                              <a href=""><i class="fa fa-edit  text-primary  fa-fw fa-md" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-eye text-primary fa-fw fa-md" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-trash text-danger fa-fw fa-md" aria-hidden="true"></i></a>
-                           </td>
-                        </tr>
-                        <tr>
-                           <td>Garrett Winters</td>
-                           <td>Accountant</td>
-                           <td>Tokyo</td>
-                           <td>63</td>
-                           <td>2011/07/25</td>
-                           <td>
-                              <a href=""><i class="fa fa-edit  text-primary  fa-fw fa-md" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-eye text-primary fa-fw fa-md" aria-hidden="true"></i></a>
-                              <a href=""><i class="fa fa-trash text-danger fa-fw fa-md" aria-hidden="true"></i></a>
-                           </td>
-                        </tr>
+                        @foreach($ClientsArr as $key => $clients)
+                            <tr>
+                                <td>{{$key+1}}</td>
+                                <td>{{ $clients->name??''}} <small>({{ $clients->fn_user_meta->position??'-'}})</small></td>
+                                <td>{{ $clients->fn_user_meta->company_name??'-'}}</td>
+                                <td>{{ $clients->fn_user_meta->created_at??'-'}}</td>
+                                <td>{{ $clients->fn_user_meta->is_verified??'-'}}</td>
+                                <td><span class="badge badge-lg {{ $clients->fn_user_meta->status_class??''}}">{{ $clients->fn_user_meta->status??'-'}}</span></td>
+                                <td>
+                                    {!! $clients->fn_user_meta->action??'-' !!}
+                                </td>
+                            </tr>
+                        @endforeach
                      </tbody>
-                     <tfoot>
-                        <tr>
-                           <th>Name</th>
-                           <th>Position</th>
-                           <th>Office</th>
-                           <th>Reg. Date</th>
-                           <th>Status</th>
-                           <th>Action</th>
-                        </tr>
-                     </tfoot>
                   </table>
                </div>
             </div>

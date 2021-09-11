@@ -50,7 +50,7 @@
                            <div class="col-lg-12">
                               <div class="floating-label form-group">
                                  <label for="email" class="form-label">Email</label>
-                                 <input type="email" class="form-control" id="email" aria-describedby="email" placeholder=" ">
+                                 <input type="email" class="form-control border-default" id="email" aria-describedby="email" placeholder=" ">
                               </div>
                            </div>
                         </div>

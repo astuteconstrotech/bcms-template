@@ -1614,8 +1614,8 @@ progress {
   vertical-align: center;
   border-color: #eee; }
   .table > :not(caption) > * > * {
-    padding: 1rem 1.5rem;
-    background-color: var(--bs-table-bg);
+    padding: 0.3rem 1.5rem;
+    background-color: #b7b5b514;
     border-bottom-width: 1px;
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg); }
   .table > tbody {
@@ -1793,8 +1793,25 @@ progress {
   font-size: 0.875em;
   color: #6c757d; }
 
+
 .form-control {
   display: block;
+    width: 100%;
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8A92A6;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e84e0f52;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* border-radius: 0.25rem; */
+    box-shadow: 0 0 0 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+/*  display: block;
   width: 100%;
   padding: 0.5rem 1rem;
   font-size: 1rem;
@@ -1809,7 +1826,8 @@ progress {
           appearance: none;
   /*border-radius: 0.25rem;*/
   box-shadow: 0 0 0 0;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; */
+}
   @media (prefers-reduced-motion: reduce) {
     .form-control {
       transition: none; } }
@@ -4180,6 +4198,7 @@ textarea.form-control-lg {
   z-index: 3;
   color: #fff;
   background-color: #f16a1b;
+  background-image: linear-gradient(to top, rgb(236 121 22), #da2510);
   border-color: #f16a1b; }
 
 .page-item.disabled .page-link {
@@ -10817,7 +10836,7 @@ textarea.form-control-lg {
   transition: all 300ms ease; }
   .form-switch .form-check-input:checked {
     background-color: #c4cdf8;
-    border-color: #c4cdf8;
+    border-color: red;
     transition: all 300ms ease; }
 
 .form-group {
@@ -10908,11 +10927,15 @@ textarea.form-control-lg {
   .table thead {
     white-space: nowrap; }
     .table thead tr {
-      background-color: #ffe1d0; }
+      background-color: #ffe1d0; 
+      background-image: linear-gradient(to top, rgb(236 100 22), #da2508);
+      color: white;
+    }
       .table thead tr th {
-        padding: 0.75rem 1.5rem;
-        text-transform: uppercase;
-        letter-spacing: 0.2px; }
+        padding: 0.3rem 1rem;
+        text-transform: capitalize;
+        letter-spacing: 0.2px; 
+      }
   .table tbody tr td {
     color: #232D42;
     vertical-align: middle; }
@@ -21933,3 +21956,6 @@ body.offcanvas-active {
     background: #151824; }
     .dark.boxed-fancy .boxed-inner {
       background: #151824; }
+table.dataTable>thead .sorting:after, table.dataTable>thead .sorting:before, table.dataTable>thead .sorting_asc:after, table.dataTable>thead .sorting_asc:before, table.dataTable>thead .sorting_asc_disabled:after, table.dataTable>thead .sorting_asc_disabled:before, table.dataTable>thead .sorting_desc:after, table.dataTable>thead .sorting_desc:before, table.dataTable>thead .sorting_desc_disabled:after, table.dataTable>thead .sorting_desc_disabled:before{
+  bottom: 0.5em !important;
+}

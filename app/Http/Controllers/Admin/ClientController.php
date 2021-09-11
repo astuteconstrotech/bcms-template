@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\UserMeta;
 
 class ClientController extends Controller
 {
@@ -14,7 +16,10 @@ class ClientController extends Controller
      */
     public function index()
     {
-        return view('admin.clients.index');
+        $ClientsArr = User::with(['fn_user_meta'=>function ($q){
+            $q->where('role',2);
+        }])->where('id','!=',1)->get();
+        return view('admin.clients.index',compact('ClientsArr'));
     }
 
     /**
@@ -57,7 +62,10 @@ class ClientController extends Controller
      */
     public function edit($id)
     {
-        //
+        $clientArr = User::with(['fn_user_meta'=>function($q){
+            $q->with('fn_files')->where('status',[0,1]);
+        }])->find($id);
+        return view('admin.clients.edit',compact('clientArr'));
     }
 
     /**

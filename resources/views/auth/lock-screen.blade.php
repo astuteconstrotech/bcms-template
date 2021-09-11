@@ -48,7 +48,7 @@
                               <div class="col-lg-12">
                                  <div class="floating-label form-group">
                                     <label for="password" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="password" aria-describedby="password" placeholder=" ">
+                                    <input type="password" class="form-control border-default" id="password" aria-describedby="password" placeholder=" ">
                                  </div>
                               </div>
                            </div>

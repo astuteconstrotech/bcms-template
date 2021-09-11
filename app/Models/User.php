@@ -12,6 +12,7 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    protected $table = 'users';
     /**
      * The attributes that are mass assignable.
      *
@@ -41,4 +42,18 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+    * Function to define the 
+    */ 
+    public function fn_user_meta() {
+        return $this->hasOne('App\Models\UserMeta','user_id');
+    }
+
+    public function fn_profile()
+    {
+        return $this->hasOne('App\Models\User','user_id');
+    }
+
+
 }
