@@ -1,4 +1,6 @@
 @extends('layouts.app')
+@section('header')
+@endsection
 @php $readonly="readonly" @endphp
 @section('content')
 <div class="col-md-12 iq-navbar-header" style="height: 100px;">
@@ -12,7 +14,7 @@
    <div class="conatiner-fluid content-inner mt-n5 py-0">
       {!! Form::model($clientArr, [
                             'method' => 'PATCH',
-                            'url' => ['admin/clients/', $clientArr->id],
+                            'url' => ['company-profile', $clientArr->id],
                             'class' => 'form-horizontal',
                             'files' => true
                         ]) !!}
@@ -21,7 +23,7 @@
                <div class="card">
                   <div class="card-header d-flex justify-content-between">
                      <div class="header-title">
-                        <h4 class="card-title">Edit Personal Imformation</h4>
+                        <h4 class="card-title">Edit Organization Details</h4>
                      </div>
                   </div>
                   <div class="card-body">
@@ -34,4 +36,22 @@
          </div>
       {!! Form::close() !!}
   </div>
+@endsection
+@section('footer')
+<script type="text/javascript">
+   
+    var i = 0;
+       
+    $("#add").click(function(){
+   
+        ++i;
+   
+        $("#dynamicTable").append('<tr><td><input type="text" name="addmore['+i+'][name]" placeholder="Enter your Name" class="form-control" /></td><td><input type="text" name="addmore['+i+'][qty]" placeholder="Enter your Qty" class="form-control" /></td><td><input type="text" name="addmore['+i+'][price]" placeholder="Enter your Price" class="form-control" /></td><td><button type="button" class="btn btn-danger remove-tr">Remove</button></td></tr>');
+    });
+   
+    $(document).on('click', '.remove-tr', function(){  
+         $(this).parents('tr').remove();
+    });  
+   
+</script>
 @endsection

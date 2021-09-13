@@ -21,7 +21,7 @@ class CreateUserMetaTable extends Migration
             $table->string('position',50)->default(NULL)->nullable();
             $table->string('found_year',10)->default(NULL)->nullable();
             $table->string('pan_no',50)->default(NULL)->nullable();
-            $table->string('Networth',50)->default(NULL)->nullable();
+            $table->string('networth',50)->default(NULL)->nullable();
             $table->string('company_services',100)->default(NULL)->nullable();
             $table->string('gst_no',400)->default(NULL)->nullable();
             $table->string('work_grade',100)->default(NULL)->nullable();

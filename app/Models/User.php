@@ -52,7 +52,7 @@ class User extends Authenticatable
 
     public function fn_profile()
     {
-        return $this->hasOne('App\Models\User','user_id');
+        return $this->hasOne('App\Models\Files');
     }
 
 

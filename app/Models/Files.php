@@ -22,7 +22,8 @@ class Files extends Authenticatable
      */
     protected $fillable = [
         'user_id',
-        'file',
+        'type',
+        'file_name',
     ];
 
     /**

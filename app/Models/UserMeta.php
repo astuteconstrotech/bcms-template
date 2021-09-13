@@ -19,7 +19,7 @@ class UserMeta extends Authenticatable
      *
      * @var string[]
      */
-    protected $fillable = [ 'user_id', 'company_name', 'position', 'found_year', 'pan_no', 'Networth', 'company_services', 'gst_no', 'work_grade', 'Location', 'working_area', 'user_type', 'desc', 'street_address', 'city', 'state', 'country', 'zip_code', 'mobile_no', 'alt_contact_no', 'profile', 'ref_code', 'role', 'verification', 'agree_terms', 'status'];
+    protected $fillable = [ 'user_id', 'company_name','company_uid', 'company_id',  'position', 'found_year', 'pan_no', 'networth', 'company_services', 'gst_no', 'work_grade', 'location', 'working_area', 'user_type', 'desc', 'street_address', 'city', 'state', 'country', 'zip_code', 'mobile_no', 'alt_contact_no', 'profile', 'ref_code', 'role', 'verification', 'agree_terms', 'status'];
     
     protected $appends = ['action','status','status_class'];
 

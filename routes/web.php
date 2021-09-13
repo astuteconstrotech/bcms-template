@@ -48,4 +48,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('projects',App\Http\Controllers\Client\ProjectController::class);
     Route::resource('leads',App\Http\Controllers\Client\LeadsController::class);
     Route::resource('work-balance',App\Http\Controllers\Client\WorkBalanceController::class);
+
+
+
+    ##clients url / routes
+    Route::resource('company-profile', App\Http\Controllers\Admin\ClientController::class);
 });

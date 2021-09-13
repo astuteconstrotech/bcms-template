@@ -154,6 +154,12 @@
                             <i class="fa fa-file  fa-fw fa-md" aria-hidden="true"></i> Invoice</span>
                         </a>
                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{{ url('reports')}}" target="_blank">
+                            <span>
+                            <i class="fa fa-user  fa-fw fa-md" aria-hidden="true"></i> User Management</span>
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{{ url('reports')}}" target="_blank">
                             <span>
@@ -171,12 +177,12 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{ url('file-manager')}}" target="_blank">
+                        <a class="nav-link" aria-current="page" href="{{ url('file-manager')}}">
                             <span><i class="fa fa-folder  fa-fw fa-md" aria-hidden="true"></i> Files</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="{{ url('Profile/index-dual-compact')}}" target="_blank">
+                        <a class="nav-link" aria-current="page" href="{{ url('company-profile/'.fn_company_id())}}">
                             <span><i class="fa fa-building  fa-fw fa-md" aria-hidden="true"></i> Company Profile</span>
                         </a>
                     </li>

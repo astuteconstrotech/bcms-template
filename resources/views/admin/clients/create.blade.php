@@ -9,13 +9,13 @@
     </nav>            
 </div> 
    <div class="conatiner-fluid content-inner mt-n5 py-0">
-      {!! Form::open(['url' => 'admin/clients', 'class' => '', 'files' => true]) !!}
+      {!! Form::open(['url' => 'company-profile/', 'class' => '', 'files' => true]) !!}
         <div class="row">
             <div class="col-xl-12 col-lg-12">
                <div class="card">
                   <div class="card-header d-flex justify-content-between">
                      <div class="header-title">
-                        <h4 class="card-title">Create Personal Imformation</h4>
+                        <h4 class="card-title">Register New Organization</h4>
                      </div>
                   </div>
                   <div class="card-body">

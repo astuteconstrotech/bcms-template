@@ -17,7 +17,7 @@
                   <h4 class="card-title">Clients</h4>
                </div>
                <div class="card-action">
-                    <a href="{{url('admin/clients/create')}}" class="btn btn-primary btn-sm" role="button">Add Client</a>
+                    <a href="{{url('company-profile/create')}}" class="btn btn-primary btn-sm" role="button">Add Client</a>
                 </div>
             </div>
             <div class="card-body">
